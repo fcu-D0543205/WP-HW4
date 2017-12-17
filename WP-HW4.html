@@ -3,17 +3,17 @@
 	<head>
 	</head>
 	<body>
-		<h2>½Ğ¿ï¾Ü¾Ç°|</h2>
+		<h2>è«‹é¸æ“‡å­¸é™¢</h2>
 		<select id = "college-list" onchange = "changeCollege()"></select>
-		<h2>½Ğ¿ï¾Ü¬ì¨t</h2>
+		<h2>è«‹é¸æ“‡ç§‘ç³»</h2>
 		<select id = "dept-list"></select>
 		
 		<script>
-			var colleges = ["°Ó¾Ç°|","¤u¾Ç°|","²z¾Ç°|"];
+			var colleges = ["å•†å­¸é™¢","å·¥å­¸é™¢","ç†å­¸é™¢"];
 			var collegeElm = document.getElementById("college-list");
-			var sell = ["·|­p¨t","°ê¶T¨t"];
-			var work = ["¾÷±ñ¨t","¤u¤u¨t"];
-			var math = ["À³¼Æ¨t","§÷®Æ¨t","¥ú¹q¨t"];
+			var sell = ["æœƒè¨ˆç³»","åœ‹è²¿ç³»"];
+			var work = ["æ©Ÿæ¢°ç³»","å·¥å·¥ç³»"];
+			var math = ["æ‡‰æ•¸ç³»","ææ–™ç³»","å…‰é›»ç³»"];
 			var deptElm = document.getElementById("dept-list");
 
 			sector(collegeElm,colleges);
@@ -43,6 +43,7 @@
 					option = option + '<option value ="' + j + '">' + data[j] +'</option>';
 				}
 				Elm.innerHTML = option;
+			}
 		</script>
 	</body>
 </html>
